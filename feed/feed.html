@@ -1,7 +1,13 @@
-<section ng-init="getCatImages()">
+<section ng-init="getCatImages()" >
   <h1>Feed view</h1>
-  <div ng-repeat="cat in catData" class="cat-img-container">
-    <img src={{cat.url}} class="cat-img"/>
-    <hr>
-  </div>
+  <section ng-repeat="cat in catData" class="feed-card row">
+    <div class="one-half column feed-content">
+      <div class="cat-img-container">
+        <img src={{cat.url}} class="cat-img"/>
+      </div>
+      <div class="cat-text-container">
+        <p class="cat-text">Testing paragraph</p>
+      </div>
+    </div>
+  </section>
 </section>

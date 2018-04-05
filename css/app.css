@@ -3,13 +3,44 @@ body {
 }
 
 .cat-img {
+  border-radius: 4px;
+  display: block;
   height: auto;
-  width: 400px;
+  max-height: 300px;
+  width: auto;
+  max-width: 250px;
+  margin: auto;
 }
 
 .cat-img-container {
-  height: 250px;
-  width: 400px;
+  /* height: 300px; */
+  height: auto;
+  width: 250px;
   overflow: hidden;
-  border: 1px solid black;
+  /* border: 1px solid red; */
+}
+
+.cat-text {
+  height: 100%;
+  text-align: center;
+}
+
+.cat-text-container {
+  height: 50px;
+  width: 250px;
+}
+
+.feed-card {
+  border: 1px solid grey;
+  border-radius: 4px;
+  float: left;
+  margin: 10px;
+}
+
+.feed-content {
+  /* border: 1px solid green; */
+  /* float: left; */
+  /* margin: 20px; */
+  /* height: 350px; */
+  width: 300px;
 }
