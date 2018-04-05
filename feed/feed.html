@@ -1,5 +1,7 @@
 <section ng-init="getCatImages()">
   <h1>Feed view</h1>
-  {{catData}}
-  <hr>
+  <div ng-repeat="cat in catData">
+    {{cat}}
+    <hr>
+  </div>
 </section>
