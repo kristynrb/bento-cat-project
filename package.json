@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/kristynrb/bento-cat-project/issues"
   },
-  "homepage": "https://github.com/kristynrb/bento-cat-project#readme"
+  "homepage": "https://github.com/kristynrb/bento-cat-project#readme",
+  "dependencies": {
+    "xml2js": "^0.4.19"
+  }
 }
