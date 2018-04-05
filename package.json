@@ -1,0 +1,21 @@
+{
+  "name": "bento-interview",
+  "version": "1.0.0",
+  "description": "cat app for bento interview",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8080 -c-1 ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristynrb/bento-cat-project.git"
+  },
+  "author": "Kristyn Bryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristynrb/bento-cat-project/issues"
+  },
+  "homepage": "https://github.com/kristynrb/bento-cat-project#readme"
+}
