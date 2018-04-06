@@ -13,11 +13,9 @@ body {
 }
 
 .cat-img-container {
-  /* height: 300px; */
   height: auto;
   width: 250px;
   overflow: hidden;
-  /* border: 1px solid red; */
 }
 
 .cat-text {
@@ -38,9 +36,5 @@ body {
 }
 
 .feed-content {
-  /* border: 1px solid green; */
-  /* float: left; */
-  /* margin: 20px; */
-  /* height: 350px; */
   width: 300px;
 }

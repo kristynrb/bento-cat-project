@@ -1,4 +1,4 @@
-<section ng-init="getCatImages()" >
+<section ng-init="getCatImages(); getCatFacts()">
   <h1>Feed view</h1>
   <section ng-repeat="cat in catData" class="feed-card row">
     <div class="one-half column feed-content">
@@ -6,7 +6,7 @@
         <img src={{cat.url}} class="cat-img"/>
       </div>
       <div class="cat-text-container">
-        <p class="cat-text">Testing paragraph</p>
+        <p class="cat-text">{{catFacts[cat.factID].fact}}</p>
       </div>
     </div>
   </section>
