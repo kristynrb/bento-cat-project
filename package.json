@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kristynrb/bento-cat-project#readme",
   "dependencies": {
+    "angular-toarrayfilter": "^1.0.3",
     "xml2js": "^0.4.19"
   }
 }

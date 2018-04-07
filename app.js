@@ -4,7 +4,8 @@ angular.module('catApp', [
   'ngRoute',
   'catApp.feed',
   'catApp.card',
-  'catApp.sharedService'
+  'catApp.sharedService',
+  'angular-toArrayFilter'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');

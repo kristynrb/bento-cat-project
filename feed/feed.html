@@ -1,13 +1,15 @@
 <main ng-init="getData();" ng-cloak>
   <h1>Feed view</h1>
-  <section ng-repeat="cat in catData" class="feed-card row">
-    <div class="one-half column feed-content">
+  <button ng-click="sortFeed('factLastWord')">Sort by last word</button>
+  <br>
+  <section ng-repeat="cat in catObject | toArray | orderBy: sortValue" class="feed-card row">
+    <div class="one-half column feed-content" ng-cloak>
       <a ng-href="#!/card/{{cat.factID}}">
       <div class="cat-img-container">
         <img src={{cat.url}} class="cat-img"/>
       </div>
       <div class="cat-text-container">
-        <p class="cat-text">{{catFacts[cat.factID].fact}}</p>
+        <p class="cat-text">{{cat.fact}}</p>
       </div>
       </a>
     </div>
