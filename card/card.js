@@ -8,3 +8,9 @@ angular.module('catApp.card', ['ngRoute'])
     controller: 'CardCtrl'
   });
 }])
+
+.controller('CardCtrl', ['$scope', '$http', '$route', '$routeParams', 'sharedService', function($scope, $http, $route, $routeParams, sharedService) {
+  $scope.catCardID = $routeParams.cardID;
+  $scope.catImageData = sharedService.catImageData;
+  $scope.catFactData = sharedService.catFactData;
+}])

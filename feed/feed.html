@@ -1,8 +1,8 @@
-<section ng-init="getCatImages(); getCatFacts()">
+<main ng-init="getData();" ng-cloak>
   <h1>Feed view</h1>
   <section ng-repeat="cat in catData" class="feed-card row">
     <div class="one-half column feed-content">
-      <a href="#!/card/{{cat.factID}}">
+      <a ng-href="#!/card/{{cat.factID}}">
       <div class="cat-img-container">
         <img src={{cat.url}} class="cat-img"/>
       </div>
@@ -12,4 +12,4 @@
       </a>
     </div>
   </section>
-</section>
+</main>

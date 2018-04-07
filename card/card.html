@@ -1,1 +1,15 @@
-<h1>Card view</h1>
+<section ng-controller="CardCtrl" ng-cloak>
+  <h1><a ng-href="#!/feed">Back to Feed</a></h1>
+  <section class="feed-card row">
+    <div class="twelve columns feed-content">
+      <div ng-repeat="cat in catImageData">
+        <div ng-if="cat.factID == catCardID">
+          <img src="{{cat.url}}" />
+        </div>
+      </div>
+      <div class="cat-text-container">
+        <p class="cat-text">{{catFactData[catCardID].fact}}</p>
+      </div>
+    </div>
+  </section>
+</section>

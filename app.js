@@ -4,6 +4,7 @@ angular.module('catApp', [
   'ngRoute',
   'catApp.feed',
   'catApp.card',
+  'catApp.sharedService'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');

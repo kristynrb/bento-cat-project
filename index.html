@@ -15,10 +15,11 @@
 </head>
 
 <body>
-  <main class="container">
+  <main class="container" ng-controller="FeedCtrl">
     <div ng-view></div>
   </main>
   <script src="app.js"></script>
+  <script src="sharedService.js"></script>
   <script src="feed/feed.js"></script>
   <script src="card/card.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js"></script>
