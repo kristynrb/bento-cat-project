@@ -1,30 +1,41 @@
 body {
-  background-color: lightgrey;
+  background-color: #F5F5F5;
+}
+
+.button {
+  background-color: white;
+}
+
+a >.card-title {
+  color: black;
+  text-decoration: none;
+}
+
+a > .card-title:hover {
+  color: grey;
 }
 
 .cat-img {
   border-radius: 4px;
   display: block;
-  height: auto;
-  max-height: 400px;
-  width: auto;
-  max-width: 250px;
   margin: auto;
+  max-height: 225px;
+  object-fit: contain;
 }
 
 .cat-img-container {
-  height: auto;
+  height: 225px;
   width: 250px;
   overflow: hidden;
 }
 
 .cat-text {
-  height: 70px;
-  line-height: 1.1;
+  height: 60px;
+  line-height: 1.2;
   margin: 0;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   padding: 10px;
   text-justify: inter-word;
@@ -53,6 +64,7 @@ body {
 }
 
 .feed-card {
+  background-color: white;
   border: 1px solid grey;
   border-radius: 4px;
   float: left;
@@ -76,4 +88,9 @@ body {
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
+}
+
+.singleCardContainer {
+  width: 100%;
+  height: 100%;
 }

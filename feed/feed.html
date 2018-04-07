@@ -1,6 +1,6 @@
 <main ng-init="getData();" ng-cloak>
-  <h1>Feed view</h1>
-  <button ng-click="sortFeed('factLastWord')">Sort by last word</button>
+  <h1>The Awwws</h1>
+  <button ng-click="sortFeed('factLastWord')">Sort by Last Word</button>
   <button ng-click="filterFeed(favorite, true)">Favorites</button>
   <br>
   <section ng-repeat="cat in catObject | toArray | orderBy:sortValue | filter: {favorite: !!filterValue || undefined}" class="feed-card row">
