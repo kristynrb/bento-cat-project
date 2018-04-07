@@ -15,6 +15,29 @@ angular.module('catApp.feed', ['ngRoute'])
   $scope.catFacts = [];
   $scope.catObject = {};
   $scope.sortValue = "";
+  $scope.filterType = "";
+  $scope.filterValue = "";
+  $scope.filterFavoriteToggle = true;
+
+  $scope.setFavoriteStatus = function(catID) {
+    if ($scope.catObject[catID].favorite) {
+      $scope.catObject[catID].favorite = false;
+    } else {
+      $scope.catObject[catID].favorite = true;
+    }
+  }
+
+  $scope.filterFeed = function (type, value) {
+    if($scope.filterFavoriteToggle) {
+      $scope.filterType = type;
+      $scope.filterValue = value;
+      $scope.filterFavoriteToggle = false;
+    } else {
+      $scope.filterType = "";
+      $scope.filterValue = "";
+      $scope.filterFavoriteToggle = true;
+    }
+  }
 
   $scope.sortFeed = function (value) {
     $scope.sortValue = value;

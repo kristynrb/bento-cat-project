@@ -1,18 +1,21 @@
 <main ng-init="getData();" ng-cloak>
   <h1>Feed view</h1>
   <button ng-click="sortFeed('factLastWord')">Sort by last word</button>
+  <button ng-click="filterFeed(favorite, true)">Favorites</button>
   <br>
-  <section ng-repeat="cat in catObject | toArray | orderBy: sortValue" class="feed-card row">
+  <section ng-repeat="cat in catObject | toArray | orderBy:sortValue | filter: {favorite: !!filterValue || undefined}" class="feed-card row">
     <div class="one-half column feed-content" ng-cloak>
       <a ng-href="#!/card/{{cat.factID}}">
       <div class="cat-img-container">
         <img src={{cat.url}} class="cat-img"/>
       </div>
-      <div class="cat-text-container">
-        <p class="cat-text">{{cat.fact}}</p>
-        <span class="fave-heart">Heart</span>
-      </div>
       </a>
+      <div class="cat-text-container">
+        <a ng-href="#!/card/{{cat.factID}}">
+          <p class="cat-text">{{cat.fact}}</p>
+        </a>
+        <span ng-click="setFavoriteStatus(cat.factID)" class="fave-heart ng-class:{'favorite': cat.favorite};"><i class="far fa-heart"></i></span>
+      </div>
     </div>
   </section>
 </main>
