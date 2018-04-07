@@ -35,6 +35,12 @@ body {
   width: 250px;
 }
 
+.fave-heart {
+  bottom: 0;
+  position: relative;
+  right: 0;
+}
+
 .feed-card {
   border: 1px solid grey;
   border-radius: 4px;
