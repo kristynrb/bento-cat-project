@@ -13,5 +13,5 @@
 - [Font Awesome](https://fontawesome.com/) for heart icon
 
 Next steps:
-- Refine the layout to not have large gaps.
 - Refine the sorting. The sort will pull the last word which may include a special character. Those special characters (like parenthesis) are valued lower than numbers and are displayed first.
+- Have a functioning "next" and "previous" buttons for individual view. 

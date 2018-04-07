@@ -1,7 +1,9 @@
 <section ng-controller="CardCtrl" class="singleCardContainer row" ng-cloak>
-  <a ng-href="#!/feed"><button class="card-title">Back to Feed</button></a>
-  <button>Previous</button>
-  <button>Next</button>
+  <a ng-href="#!/feed">
+    <button class="card-title">Back to Feed</button>
+  </a>
+  <button ng-click="getCat('previous')">Previous</button>
+  <button ng-click="getCat('next')">Next</button>
   <br />
   <section class="feed-card">
     <div>
